@@ -136,7 +136,7 @@ static struct panel_timing nt51017_wxga_video_timing_info = {
 };
 
 static struct backlight nt51017_wxga_video_backlight = {
-	.bl_interface_type = BL_SAMSUNG_PWM,
+	.bl_interface_type = BL_PWM,
 	.bl_min_level = 1,
 	.bl_max_level = 255,
 };
