@@ -1,0 +1,21 @@
+&mdss_dsi0 {
+	panel@0 {
+		compatible = "sharp";
+		reg = <0>;
+
+		backlight = <&backlight>;
+		reset-gpios = <&tlmm XY GPIO_ACTIVE_LOW>;
+		backlight-gpios = <&tlmm XY GPIO_ACTIVE_HIGH>;
+
+		port {
+			panel_in: endpoint {
+				remote-endpoint = <&mdss_dsi0_out>;
+			};
+		};
+	};
+};
+
+&mdss_dsi0_out {
+	data-lanes = <0 1>;
+	remote-endpoint = <&panel_in>;
+};
