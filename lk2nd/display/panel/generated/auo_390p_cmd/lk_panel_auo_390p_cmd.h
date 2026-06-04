@@ -127,7 +127,7 @@ static struct command_state auo_390p_cmd_state = {
 };
 
 static struct commandpanel_info auo_390p_cmd_command_panel = {
-	/* FIXME: This is a command mode panel */
+	0x1, 0x1, 0x1, 0, 0, 0, 0, 0, 0, 0x1, 0, 0
 };
 
 static struct videopanel_info auo_390p_cmd_video_panel = {

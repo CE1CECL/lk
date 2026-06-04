@@ -109,7 +109,7 @@ static struct command_state rm67162_wqvga_cmd_state = {
 };
 
 static struct commandpanel_info rm67162_wqvga_cmd_command_panel = {
-	/* FIXME: This is a command mode panel */
+	1, 1, 1, 1, 2, 0x2c, 0, 0, 0, 1, 0, 0
 };
 
 static struct videopanel_info rm67162_wqvga_cmd_video_panel = {

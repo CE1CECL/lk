@@ -193,7 +193,7 @@ static struct command_state auo_qvga_cmd_state = {
 };
 
 static struct commandpanel_info auo_qvga_cmd_command_panel = {
-	/* FIXME: This is a command mode panel */
+	1, 1, 1, 0, 0, 0x2c, 0, 0, 0, 1, 0, 0
 };
 
 static struct videopanel_info auo_qvga_cmd_video_panel = {
