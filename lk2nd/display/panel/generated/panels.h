@@ -5,6 +5,29 @@
 
 #if 1
 
+// Begin samsung-gtelwifiue
+
+//#include "lk_panel_nt51017_wxga_video.h" // Touch-Screen
+
+// End samsung-gtelwifiue
+
+// Begin mobvoi-catfish
+
+#include "lk_panel_rm67162_wqvga_cmd.h" // Touch-Screen
+
+// End mobvoi-catfish
+
+// Begin cat-s22flip
+
+//#include "lk_panel_jd9161z_boe_ips_video.h" // Touch-Screen
+#include "lk_panel_st7789v2_qvga_spi_cmd.h" // Lid-Screen
+
+// End cat-s22flip
+
+//#elif 1
+
+// Begin linux-mdss-dsi-panel-driver-generator
+
 #include "auo_390p_cmd/lk_panel_auo_390p_cmd.h"
 #include "auo_400p_cmd/lk_panel_auo_400p_cmd.h"
 #include "auo_cx_qvga_cmd/lk_panel_auo_cx_qvga_cmd.h"
@@ -15,10 +38,12 @@
 #include "hx8394d_720p_video/lk_panel_hx8394d_720p_video.h"
 #include "hx8394d_qhd_video/lk_panel_hx8394d_qhd_video.h"
 #include "ili9806e_fwvga_video/lk_panel_ili9806e_fwvga_video.h"
-#include "nt51017_wxga_video/lk_panel_nt51017_wxga_video.h"
-#include "rm67162_wqvga_cmd/lk_panel_rm67162_wqvga_cmd.h"
+#include "nt51017_wxga_video/lk_panel_nt51017_wxga_video.h" // samsung-gtelwifiue
+//#include "rm67162_wqvga_cmd/lk_panel_rm67162_wqvga_cmd.h" // mobvoi-catfish
 #include "sharp_qhd_video/lk_panel_sharp_qhd_video.h"
 #include "truly_wvga_cmd/lk_panel_truly_wvga_cmd.h"
+
+// End linux-mdss-dsi-panel-driver-generator
 
 #else
 
